@@ -1,0 +1,59 @@
+.header {
+    padding-top: 24px;
+    padding-bottom: 16px;
+}
+
+.header__container {
+    display: flex;
+    align-items: center;
+}
+
+.header__logo {
+    display: flex;
+    align-items: center;
+    margin-right: 40px;
+}
+
+.header__logo-icon {
+    margin-right: 8px;
+}
+
+.header__logo-text {
+    color: getColor(accent);
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: Space Grotesk;
+    font-size: 20.883px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 22px;
+}
+
+// .header-nav {}
+
+// .header__header-nav {}
+
+.header-nav-list {
+    display: flex;
+    gap: 32px;
+}
+
+// .header-nav__header-nav-list {}
+
+.header-nav-list__item-link {
+    color: getColor(gray-500);
+    font-size: 16px;
+    font-weight: 500px;
+}
+
+.header__btn {
+    margin-left: auto;
+    background-color: getColor(accent);
+    color: white;
+    padding: 12px 21px;
+    border-radius: 12px;
+
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+}

@@ -1,0 +1,9 @@
+$colors: (
+    'accent': #023047,
+    'gray-500': #667085,
+    'gray-900': #101828,
+);
+
+@function getColor($key) {
+    @return map-get($colors, $key);
+};
