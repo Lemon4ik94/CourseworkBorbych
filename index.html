@@ -10,8 +10,8 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@700&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="css/main.min.css">
-    <script src="./js/scroll.js"></script>
+    <link rel="stylesheet" href="./js/wow.js/animate.css">
+    <link rel="stylesheet" href="./css/main.min.css">
     <title>Document</title>
 </head>
 
@@ -74,11 +74,11 @@
         </section>
         <section class="money">
             <div class="money__container">
-                <h3 class="money__heading">Make every penny count</h3>
-                <p class="money__desc">Spend smarter, lower your bills, get cashback on everything you buy, and
+                <h3 class="money__heading wow fadeInDown">Make every penny count</h3>
+                <p class="money__desc wow fadeInDown">Spend smarter, lower your bills, get cashback on everything you buy, and
                     unlock credit to grow your business.</p>
                 <div class="simple-security money__simple-security">
-                    <div class="simple simple-security__simple">
+                    <div class="simple simple-security__simple wow fadeInLeftBig">
                         <div class="simple__text">
                             <h3 class="simple__heading">Pay with Kobodrop, quick, simple and easy</h3>
                             <p class="simple__desc">Paying your bills on Kobdrop has never been easier. Whether you are
@@ -91,9 +91,9 @@
                             <img src="./images/money/notification-img2.png" alt="MTN notification">
                         </div>
                     </div>
-                    <div class="security simple-security__security">
+                    <div class="security simple-security__security wow fadeInRightBig">
                         <svg class="security__icon" width="48" height="48">
-                            <use href="images/icons.svg#icon-ShieldCheck"></use>
+                            <use href="./images/icons.svg#icon-ShieldCheck"></use>
                         </svg>
                         <div class="security__text">
                             <h3 class="security__heading">Bank level security</h3>
@@ -102,10 +102,10 @@
                         </div>
                     </div>
                 </div>
-                <div class="payment money__payment">
+                <div class="payment money__payment wow bounceInUp">
                     <div class="reduction payment__reduction">
                         <svg class="reduction__icon" width="48" height="48">
-                            <use href="images/icons.svg#icon-coins">
+                            <use href="./images/icons.svg#icon-coins">
                         </svg>
                         <div class="reduction__text">
                             <h3 class="reduction__heading">Cost reduction</h3>
@@ -150,7 +150,7 @@
                 </div>
             </div>
         </section>
-        <section class="features">
+        <section class="features wow fadeInUpBig">
             <div class="container">
                 <h3 class="features__heading">Transact seamlessly with...</h3>
                 <p class="features__desc">Connect your other accounts to Kobodrop seamlessly. Kobodrop supports 200+
@@ -340,6 +340,10 @@
             </div>
         </footer>
     </main>
+    <script src="./js/wow.js/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
 </body>
 
 </html>
