@@ -130,5 +130,6 @@ dist
 .pnp.*
 
 #npm json
+mail.json
 package-lock.json
 package.json
