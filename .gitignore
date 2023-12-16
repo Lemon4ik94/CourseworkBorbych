@@ -133,3 +133,4 @@ dist
 mail.json
 package-lock.json
 package.json
+.vscode/

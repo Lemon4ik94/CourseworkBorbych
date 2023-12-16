@@ -794,6 +794,7 @@ button {
 
 .testymonials {
   position: relative;
+  width: 576px;
 }
 
 .testymonials__img {
@@ -830,7 +831,7 @@ button {
   align-items: flex-start;
   gap: 16px;
   align-self: stretch;
-  margin-bottom: 16px;
+  margin-bottom: 30px;
 }
 
 .content-box__name {
@@ -869,14 +870,19 @@ button {
   line-height: 28px;
 }
 
-.arrows {
+.splide__arrows {
+  position: absolute;
+  right: 24px;
+  bottom: 0px;
   display: flex;
   align-items: center;
   margin-left: auto;
   gap: 32px;
 }
 
-.arrows__button {
+.arrows__button--left,
+.arrows__button--right {
+  position: static;
   background-color: rgba(255, 255, 255, 0);
   display: flex;
   width: 56px;

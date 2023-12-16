@@ -11,6 +11,7 @@
         href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@700&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="./js/wow.js/animate.css">
+    <link rel="stylesheet" href="./js/splide.js/splide.min.css">
     <link rel="stylesheet" href="./css/main.min.css">
     <title>Document</title>
 </head>
@@ -27,8 +28,10 @@
             <nav class="header-nav header__header-nav">
                 <ul class="header-nav-list header-nav__header-nav-list">
                     <li class="header-nav-list__item"><a href="#learn" class="header-nav-list__item-link">Learn</a></li>
-                    <li class="header-nav-list__item"><a href="#integrations" class="header-nav-list__item-link">Partners</a></li>
-                    <li class="header-nav-list__item"><a href="#join-us" class="header-nav-list__item-link">Join Us</a></li>
+                    <li class="header-nav-list__item"><a href="#integrations"
+                            class="header-nav-list__item-link">Partners</a></li>
+                    <li class="header-nav-list__item"><a href="#join-us" class="header-nav-list__item-link">Join Us</a>
+                    </li>
                 </ul>
             </nav>
             <button class="header__btn">Install Kobodrop</button>
@@ -206,52 +209,142 @@
                         </li>
                     </ul>
                 </div>
-                <div class="testymonials join-us__testymonials">
-                    <img class="testymonials__img" src="images/join-us/kemi.jpg" width="576" height="592" alt="">
-                    <div class="content-box testymonials__content-box">
-                        <p class="content-box__desc">“Kobodrop has helped me send and receive money with little to no
-                            complications. It’s what everyone needs!!.”</p>
-                        <div class="content-box__name-box">
-                            <h3 class="content-box__name">Kemi Ogunnaike</h3>
-                            <ul class="content-box__stars-list stars-list">
-                                <li class="stars-list__item">
-                                    <svg width="20" height="20" class="stars-list__icon">
-                                        <use href="./images/icons.svg#icon-star"></use>
-                                    </svg>
-                                </li>
-                                <li class="stars-list__item">
-                                    <svg width="20" height="20" class="stars-list__icon">
-                                        <use href="./images/icons.svg#icon-star"></use>
-                                    </svg>
-                                </li>
-                                <li class="stars-list__item">
-                                    <svg width="20" height="20" class="stars-list__icon">
-                                        <use href="./images/icons.svg#icon-star"></use>
-                                    </svg>
-                                </li>
-                                <li class="stars-list__item">
-                                    <svg width="20" height="20" class="stars-list__icon">
-                                        <use href="./images/icons.svg#icon-star"></use>
-                                    </svg>
-                                </li>
-                                <li class="stars-list__item">
-                                    <svg width="20" height="20" class="stars-list__icon">
-                                        <use href="./images/icons.svg#icon-star"></use>
-                                    </svg>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="suptext-arrows content-box__suptext-arrows">
-                            <h4 class="suptext-arrows__text">Nigeria</h4>
-                            <div class="arrows suptext-arrows__arrows">
-                                <button class="arrows__button"><svg width="20" height="20" class="arrows__icon">
-                                        <use href="./images/icons.svg#icon-arrow-left"></use>
-                                    </svg></button>
-                                <button class="arrows__button"><svg width="20" height="20" class="arrows__icon">
-                                        <use href="./images/icons.svg#icon-arrow-right"></use>
-                                    </svg></button>
-                            </div>
-                        </div>
+                <div class="testymonials join-us__testymonials splide" role="group">
+                    <div class="splide__arrows suptext-arrows__arrows">
+                        <button class="splide__arrow--prev splide__arrow arrows__button--left"><svg width="20"
+                                height="20" class="arrows__icon">
+                                <use href="./images/icons.svg#icon-arrow-right"></use>
+                            </svg></button>
+                        <button class="splide__arrow--next splide__arrow arrows__button--right"><svg width="20"
+                                height="20" class="arrows__icon">
+                                <use href="./images/icons.svg#icon-arrow-right"></use>
+                            </svg></button>
+                    </div>
+                    <div class="splide__track">
+                        <ul class="testymonials__list splide__list">
+                            <li class="testymonials__item splide__slide">
+                                <img class="testymonials__img" src="./images/join-us/kemi.jpg" width="576" height="592"
+                                    alt="">
+                                <div class="content-box testymonials__content-box">
+                                    <p class="content-box__desc">“Kobodrop has helped me send and receive money with
+                                        little to no
+                                        complications. It’s what everyone needs!!.”</p>
+                                    <div class="content-box__name-box">
+                                        <h3 class="content-box__name">Kemi Ogunnaike</h3>
+                                        <ul class="content-box__stars-list stars-list">
+                                            <li class="stars-list__item">
+                                                <svg width="20" height="20" class="stars-list__icon">
+                                                    <use href="./images/icons.svg#icon-star"></use>
+                                                </svg>
+                                            </li>
+                                            <li class="stars-list__item">
+                                                <svg width="20" height="20" class="stars-list__icon">
+                                                    <use href="./images/icons.svg#icon-star"></use>
+                                                </svg>
+                                            </li>
+                                            <li class="stars-list__item">
+                                                <svg width="20" height="20" class="stars-list__icon">
+                                                    <use href="./images/icons.svg#icon-star"></use>
+                                                </svg>
+                                            </li>
+                                            <li class="stars-list__item">
+                                                <svg width="20" height="20" class="stars-list__icon">
+                                                    <use href="./images/icons.svg#icon-star"></use>
+                                                </svg>
+                                            </li>
+                                            <li class="stars-list__item">
+                                                <svg width="20" height="20" class="stars-list__icon">
+                                                    <use href="./images/icons.svg#icon-star"></use>
+                                                </svg>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="suptext-arrows content-box__suptext-arrows">
+                                        <h4 class="suptext-arrows__text">Nigeria</h4>
+                                    </div>
+                            </li>
+                            <li class="testymonials__item splide__slide">
+                                <img class="testymonials__img" src="./images/join-us/John.jpg" width="576" height="592"
+                                    alt="">
+                                <div class="content-box testymonials__content-box">
+                                    <p class="content-box__desc">“Overall, I'm very happy with Kobodrop. They offer a
+                                        great selection of products, and competitive prices.”</p>
+                                    <div class="content-box__name-box">
+                                        <h3 class="content-box__name">John Smith</h3>
+                                        <ul class="content-box__stars-list stars-list">
+                                            <li class="stars-list__item">
+                                                <svg width="20" height="20" class="stars-list__icon">
+                                                    <use href="./images/icons.svg#icon-star"></use>
+                                                </svg>
+                                            </li>
+                                            <li class="stars-list__item">
+                                                <svg width="20" height="20" class="stars-list__icon">
+                                                    <use href="./images/icons.svg#icon-star"></use>
+                                                </svg>
+                                            </li>
+                                            <li class="stars-list__item">
+                                                <svg width="20" height="20" class="stars-list__icon">
+                                                    <use href="./images/icons.svg#icon-star"></use>
+                                                </svg>
+                                            </li>
+                                            <li class="stars-list__item">
+                                                <svg width="20" height="20" class="stars-list__icon">
+                                                    <use href="./images/icons.svg#icon-star"></use>
+                                                </svg>
+                                            </li>
+                                            <li class="stars-list__item">
+                                                <svg width="20" height="20" class="stars-list__icon">
+                                                    <use href="./images/icons.svg#icon-star"></use>
+                                                </svg>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="suptext-arrows content-box__suptext-arrows">
+                                        <h4 class="suptext-arrows__text">Ukraine</h4>
+                                    </div>
+                            </li>
+                            <li class="testymonials__item splide__slide">
+                                <img class="testymonials__img" src="./images/join-us/Kyle.jpg" width="576" height="592"
+                                    alt="">
+                                <div class="content-box testymonials__content-box">
+                                    <p class="content-box__desc">“The customer service was also excellent. I had a few
+                                        questions about the e-reader, and the customer service was very
+                                        helpful.”</p>
+                                    <div class="content-box__name-box">
+                                        <h3 class="content-box__name">Kyle Jones</h3>
+                                        <ul class="content-box__stars-list stars-list">
+                                            <li class="stars-list__item">
+                                                <svg width="20" height="20" class="stars-list__icon">
+                                                    <use href="./images/icons.svg#icon-star"></use>
+                                                </svg>
+                                            </li>
+                                            <li class="stars-list__item">
+                                                <svg width="20" height="20" class="stars-list__icon">
+                                                    <use href="./images/icons.svg#icon-star"></use>
+                                                </svg>
+                                            </li>
+                                            <li class="stars-list__item">
+                                                <svg width="20" height="20" class="stars-list__icon">
+                                                    <use href="./images/icons.svg#icon-star"></use>
+                                                </svg>
+                                            </li>
+                                            <li class="stars-list__item">
+                                                <svg width="20" height="20" class="stars-list__icon">
+                                                    <use href="./images/icons.svg#icon-star"></use>
+                                                </svg>
+                                            </li>
+                                            <li class="stars-list__item">
+                                                <svg width="20" height="20" class="stars-list__icon">
+                                                    <use href="./images/icons.svg#icon-star"></use>
+                                                </svg>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="suptext-arrows content-box__suptext-arrows">
+                                        <h4 class="suptext-arrows__text">America</h4>
+                                    </div>
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </div>
@@ -341,6 +434,14 @@
             </div>
         </div>
     </footer>
+    <script src="./js/splide.js/splide.min.js"></script>
+    <script>
+        new Splide('.splide', {
+            type: 'loop',
+            perPage: 1,
+            pagination: false,
+        }).mount();
+    </script>
     <script src="./js/wow.js/wow.min.js"></script>
     <script>
         new WOW().init();
