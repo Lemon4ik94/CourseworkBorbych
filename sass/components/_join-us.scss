@@ -1,5 +1,9 @@
 .join-us {
     padding: 96px 0;
+
+    @include mobile {
+        padding: 64px 0;
+    }
 }
 
 .join-us__container {
@@ -10,6 +14,11 @@
     justify-content: center;
     align-items: center;
     gap: 64px;
+
+    @include mobile {
+        gap: 48px;
+        flex-direction: column;
+    }
 }
 
 .join-us__text {
@@ -40,6 +49,10 @@
 .testymonials {
     position: relative;
     width: 576px;
+
+    @include mobile {
+        width: 100%;
+    }
 }
 
 .testymonials__img {
@@ -71,6 +84,10 @@
     line-height: 38px;
     align-self: stretch;
     margin-bottom: 32px;
+
+    @include mobile {
+        margin-bottom: 24px;
+    }
 }
 
 .content-box__name-box {
@@ -79,6 +96,10 @@
     gap: 16px;
     align-self: stretch;
     margin-bottom: 30px;
+
+    @include mobile {
+        margin-bottom: 12px;
+    }
 }
 
 .content-box__name {
@@ -100,6 +121,10 @@
     align-items: center;
     gap: 4px;
     margin-left: auto;
+
+    @include mobile {
+        display: none;
+    }
 }
 
 .suptext-arrows {

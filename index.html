@@ -35,6 +35,11 @@
                 </ul>
             </nav>
             <button class="header__btn">Install Kobodrop</button>
+            <button class="header__mobile-btn">
+                <svg class="header__mobile-icon" width="24" height="24">
+                    <use href="./images/icons.svg#icon-mobile-menu"></use>
+                </svg>
+            </button>
         </div>
     </header>
     <main>
@@ -67,7 +72,7 @@
                         </ul>
                     </div>
                     <div class="mockup hero__mockup">
-                        <img class="mockup__customer" src="images/hero/customer.png" alt="Customer" width="634"
+                        <img class="mockup__customer" src="./images/hero/customer.png" alt="Customer" width="634"
                             height="612">
                         <img class="mockup__phone" src="./images/hero/phone-img.png" alt="App on iPhone" width="320"
                             height="652">
@@ -437,6 +442,7 @@
     <script src="./js/splide.js/splide.min.js"></script>
     <script>
         new Splide('.splide', {
+            arrows: false,
             type: 'loop',
             perPage: 1,
             pagination: false,
@@ -444,7 +450,10 @@
     </script>
     <script src="./js/wow.js/wow.min.js"></script>
     <script>
-        new WOW().init();
+        new WOW({
+            offset: 200,
+            mobile: false,
+        }).init();
     </script>
 </body>
 

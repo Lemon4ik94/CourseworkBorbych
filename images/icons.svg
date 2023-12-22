@@ -155,5 +155,8 @@
 <symbol id="icon-facebook" viewBox="0 0 32 32">
 <path fill="#98a2b3" style="fill: var(--color1, #98a2b3)" d="M32 16c0-8.837-7.163-16-16-16s-16 7.163-16 16c0 7.986 5.851 14.605 13.5 15.806v-11.181h-4.063v-4.625h4.063v-3.525c0-4.010 2.389-6.225 6.043-6.225 1.75 0 3.582 0.313 3.582 0.313v3.938h-2.018c-1.987 0-2.607 1.233-2.607 2.5v3h4.437l-0.709 4.625h-3.728v11.181c7.649-1.2 13.5-7.82 13.5-15.806z"></path>
 </symbol>
+<symbol id="icon-mobile-menu" viewBox="0 0 32 32">
+<path fill="none" stroke="#344054" style="stroke: var(--color1, #344054)" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="2.6667" d="M4 16h24M4 8h24M4 24h24"></path>
+</symbol>
 </defs>
 </svg>

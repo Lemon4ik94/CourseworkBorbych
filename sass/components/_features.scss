@@ -2,6 +2,11 @@
     padding-top: 96px;
     padding-bottom: 96px;
     background-color: #F9F9FB;
+
+    @include mobile {
+        padding-top: 64px;
+        padding-bottom: 64px;
+    }
 }
 
 .features__heading {
@@ -15,6 +20,11 @@
     font-weight: 600;
     line-height: 44px;
     letter-spacing: -0.72px;
+
+    @include mobile {
+        margin-bottom: 16px;
+        width: 100%;
+    }
 }
 
 .features__desc {
@@ -28,6 +38,11 @@
     font-style: normal;
     font-weight: 400;
     line-height: 30px;
+
+    @include mobile {
+        margin-bottom: 48px;
+        width: 100%;
+    }
 }
 
 .features-grid {
@@ -35,4 +50,9 @@
     display: grid;
     grid-template: repeat(2, 1fr) / repeat(6, 1fr);
     grid-gap: 32px;
+
+    @include mobile {
+        grid-template: repeat(4, 1fr) / repeat(3, 1fr);
+        grid-gap: 25px
+    }
 }

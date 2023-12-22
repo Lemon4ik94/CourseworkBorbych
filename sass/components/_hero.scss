@@ -1,16 +1,34 @@
 .hero {
     padding-top: 64px;
-    height: 672px;
+    // height: 672px;
     overflow: hidden;
+}
+
+.hero {
+    .container {
+        @include mobile {
+            width: 100%;
+            padding: 0 16px;
+        }
+    }
 }
 
 .hero-content {
     display: flex;
+
+    @include mobile {
+        flex-direction: column;
+    }   
+
 }
 
 .hero-content__box {
     width: 100%;
     padding-top: 95px;
+
+    @include mobile {
+        padding-top: 0px;
+    }
 }
 
 .hero-content__title {
@@ -21,6 +39,15 @@
     font-weight: 600;
     line-height: 72px;
     letter-spacing: -1.2px;
+
+    @include mobile {
+        width: 100%;
+        margin-bottom: 16px;
+
+        font-size: 36px;
+        line-height: 44px;
+        letter-spacing: -0.72px;
+    }
 }
 
 .hero-content__sup-text {
@@ -32,12 +59,21 @@
     font-size: 20px;
     line-height: 30px;
 
+    @include mobile {
+        width: 100%;
+        font-size: 18px;
+        line-height: 28px;
+    }
 }
 
 .hero-content__links-list {
     display: flex;
     margin-top: 48px;
     gap: 12px;
+
+    @include mobile {
+        margin-top: 32px;
+    }
 }
 
 .links-list__link {
@@ -56,18 +92,29 @@
     width: 100%;
     height: 612px;
 
-    img {
-        position: absolute;
+    @include mobile {
+        margin-top: 64px;
     }
 }
 
 .mockup__phone {
+    position: absolute;
     top: 92px;
     left: 15px;
+
+    @include mobile {
+        position: static;
+        margin: 0 auto;
+    }
 }
 
 .mockup__customer {
+    position: absolute;
     right: -165px;
     max-width: 634px;
     border-radius: 12px;
+
+    @include mobile {
+        display: none;
+    }
 }

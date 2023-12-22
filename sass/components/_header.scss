@@ -1,11 +1,19 @@
 .header {
     padding-top: 24px;
     padding-bottom: 16px;
+
+    @include mobile {
+        padding: 15px 0;
+    }
 }
 
 .header__container {
     display: flex;
     align-items: center;
+
+    @include mobile {
+        max-width: 100%;
+    }
 }
 
 .header__logo {
@@ -28,16 +36,14 @@
     line-height: 22px;
 }
 
-// .header-nav {}
-
-// .header__header-nav {}
-
 .header-nav-list {
     display: flex;
     gap: 32px;
-}
 
-// .header-nav__header-nav-list {}
+    @include mobile {
+        display: none;
+    }
+}
 
 .header-nav-list__item-link {
     color: getColor(gray-500);
@@ -62,5 +68,23 @@
     &:hover {
         background-color: white;
         color: getColor(accent);
+    }
+
+    @include mobile {
+        display: none;
+    }
+}
+
+.header__mobile-btn {
+    padding: 8px;
+    background-color: white;
+    margin-left: auto;
+    
+    @include desktop {
+        display: none;
+    }
+
+    @include tablet {
+        display: none;
     }
 }
