@@ -45,14 +45,24 @@
     }
 }
 
+.features__grid-box {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
 .features-grid {
-    margin: 0 auto;
     display: grid;
-    grid-template: repeat(2, 1fr) / repeat(6, 1fr);
+    grid-template: repeat(2, 1fr) / repeat(6, 116px);
     grid-gap: 32px;
 
     @include mobile {
         grid-template: repeat(4, 1fr) / repeat(3, 1fr);
         grid-gap: 25px
+    }
+
+    @include tablet {
+        grid-template: repeat(3, 1fr) / repeat(4, 116px);
+        grid-gap: 32px;
     }
 }
