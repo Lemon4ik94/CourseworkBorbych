@@ -92,6 +92,10 @@
         width: 100%;
         padding: 40px 24px 0px;
     }
+
+    @include tablet {
+        width: 100%;
+    }
 }
 
 .simple__text {
@@ -181,7 +185,7 @@
     }
 
     @include tablet {
-        width: 832px;
+        width: 100%;
     }
 }
 
@@ -262,7 +266,7 @@
     }
 
     @include tablet {
-        width: 832px;
+        width: 100%;
     }
 }
 
@@ -332,6 +336,13 @@
     @include mobile {
         width: 100%;
         flex-direction: column;
+        height: 100%;
+        padding: 40px 24px;
+        gap: 48px;
+    }
+
+    @include tablet {
+        width: 100%;
     }
 }
 

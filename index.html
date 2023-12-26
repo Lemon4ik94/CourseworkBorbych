@@ -34,10 +34,26 @@
                     </li>
                 </ul>
             </nav>
-            <button class="header__btn">Install Kobodrop</button>
-            <button class="header__mobile-btn">
+            <button class="header__btn" type="button" data-modal-open>Contact us</button>
+            <button class="header__mobile-btn" type="button" mobile-open>
                 <svg class="header__mobile-icon" width="24" height="24">
                     <use href="./images/icons.svg#icon-mobile-menu"></use>
+                </svg>
+            </button>
+        </div>
+        <div class="mobile-menu is-hidden" mobile-menu>
+            <nav class="mobile-menu__navigation">
+                <ul class="mobile-menu__nav-list">
+                    <li class="nav-list__item"><a href="#learn" class="nav-list__link" mobile-close>Learn</a></li>
+                    <li class="nav-list__item"><a href="#integrations" class="nav-list__link" mobile-close>Partners</a>
+                    </li>
+                    <li class="nav-list__item"><a href="#join-us" class="nav-list__link" mobile-close>Join Us</a>
+                    </li>
+                </ul>
+            </nav>
+            <button class="close-button mobile-menu__close-button" type="button" mobile-close>
+                <svg class="close-button__icon" width="30" height="30">
+                    <use href="./images/icons.svg#icon-close"></use>
                 </svg>
             </button>
         </div>
@@ -161,18 +177,30 @@
                     integrations with other payment platforms like stripe, paypal, payoneer and others</p>
                 <div class="features__grid-box">
                     <ul class="features-grid features__features-grid">
-                        <li class="features-grid__item"><img src="./images/integrations/Klarna.svg" alt="Klarna" class="features-grid__img"></li>
-                        <li class="features-grid__item"><img src="./images/integrations/Stripe.svg" alt="Stripe" class="features-grid__img"></li>
-                        <li class="features-grid__item"><img src="./images/integrations/PayPal.svg" alt="PayPal" class="features-grid__img"></li>
-                        <li class="features-grid__item"><img src="./images/integrations/bedc.png" alt="BEDC" class="features-grid__img"></li>
-                        <li class="features-grid__item"><img src="./images/integrations/Mastercard.svg" alt="Mastercard" class="features-grid__img"></li>
-                        <li class="features-grid__item"><img src="./images/integrations/mtn.png" alt="MTN" class="features-grid__img"></li>
-                        <li class="features-grid__item"><img src="./images/integrations/airtel.png" alt="Airtel" class="features-grid__img"></li>
-                        <li class="features-grid__item"><img src="./images/integrations/Payoneer.svg" alt="Payoneer" class="features-grid__img"></li>
-                        <li class="features-grid__item"><img src="./images/integrations/visa.png" alt="Visa" class="features-grid__img"></li>
-                        <li class="features-grid__item"><img src="./images/integrations/9mobile.png" alt="9mobile" class="features-grid__img"></li>
-                        <li class="features-grid__item"><img src="./images/integrations/ikeja.png" alt="Ikeja" class="features-grid__img"></li>
-                        <li class="features-grid__item"><img src="./images/integrations/dstv.png" alt="DStv" class="features-grid__img"></li>
+                        <li class="features-grid__item"><img src="./images/integrations/Klarna.svg" alt="Klarna"
+                                class="features-grid__img"></li>
+                        <li class="features-grid__item"><img src="./images/integrations/Stripe.svg" alt="Stripe"
+                                class="features-grid__img"></li>
+                        <li class="features-grid__item"><img src="./images/integrations/PayPal.svg" alt="PayPal"
+                                class="features-grid__img"></li>
+                        <li class="features-grid__item"><img src="./images/integrations/bedc.png" alt="BEDC"
+                                class="features-grid__img"></li>
+                        <li class="features-grid__item"><img src="./images/integrations/Mastercard.svg" alt="Mastercard"
+                                class="features-grid__img"></li>
+                        <li class="features-grid__item"><img src="./images/integrations/mtn.png" alt="MTN"
+                                class="features-grid__img"></li>
+                        <li class="features-grid__item"><img src="./images/integrations/airtel.png" alt="Airtel"
+                                class="features-grid__img"></li>
+                        <li class="features-grid__item"><img src="./images/integrations/Payoneer.svg" alt="Payoneer"
+                                class="features-grid__img"></li>
+                        <li class="features-grid__item"><img src="./images/integrations/visa.png" alt="Visa"
+                                class="features-grid__img"></li>
+                        <li class="features-grid__item"><img src="./images/integrations/9mobile.png" alt="9mobile"
+                                class="features-grid__img"></li>
+                        <li class="features-grid__item"><img src="./images/integrations/ikeja.png" alt="Ikeja"
+                                class="features-grid__img"></li>
+                        <li class="features-grid__item"><img src="./images/integrations/dstv.png" alt="DStv"
+                                class="features-grid__img"></li>
                     </ul>
                 </div>
             </div>
@@ -428,6 +456,57 @@
             </div>
         </div>
     </footer>
+    <div class="backdrop is-hidden-modal" data-modal>
+		<div class="modal-window backdrop__modal-window">
+			<button class="modal-window__close-window" type="submit" data-modal-close>
+				<svg class="modal-window__close-window-icon" width="30px" height="30px">
+					<use xlink:href="./images/icons.svg#icon-close"></use>
+				</svg>
+			</button>
+			<h2 class="modal-window__title">Залиште свої дані, ми вам передзвонимо</h2>
+			<form id="contact" name="feedback-form modal-window__feedback-form" autocomplete="on">
+				<ul class="feedback-list feedback-form__list">
+					<li class="feedback-list__item">
+						<label class="feedback-list__label" for="name">Ім'я</label>
+						<div class="feedback-list__container">
+							<input class="feedback-list__field" required type="text" name="feedback_name" id="name">
+							<svg class="feedback-list__icon" width="18" height="18">
+								<use href="images/icons.svg#icon-person-black"></use>
+							</svg>
+						</div>
+					</li>
+					<li class="feedback-list__item">
+						<label class="feedback-list__label" for="phone">Телефон</label>
+						<div class="feedback-list__container">
+							<input class="feedback-list__field" required type="tel" name="feedback_phone" id="phone">
+							<svg class="feedback-list__icon" width="18" height="18">
+								<use href="images/icons.svg#icon-phone-black"></use>
+							</svg>
+						</div>
+					</li>
+					<li class="feedback-list__item">
+						<label class="feedback-list__label" for="email">Пошта</label>
+						<div class="feedback-list__container">
+							<input class="feedback-list__field" required type="email" name="feedback_email" id="email">
+							<svg class="feedback-list__icon" width="18" height="18">
+								<use href="images/icons.svg#icon-email-black"></use>
+							</svg>
+						</div>
+					</li>
+					<li class="feedback-list__item">
+						<label class="feedback-list__label" for="comment">Коментар</label>
+						<div class="feedback-list__container">
+							<textarea class="feedback-list__comment-field" required rows="5" name="feedback_comment"
+								id="comment" placeholder="Введіть текст"></textarea>
+						</div>
+					</li>
+				</ul>
+				<button class="feedback-form__button" type="submit">Відправити</button>
+			</form>
+		</div>
+	</div>
+    <script src="./js/modal.js"></script>
+    <script src="./js/mobile.js"></script>
     <script src="./js/splide.js/splide.min.js"></script>
     <script>
         new Splide('.splide', {
