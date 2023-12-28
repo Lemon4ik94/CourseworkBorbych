@@ -45,10 +45,19 @@
     }
 }
 
+// .header-nav-list__item:hover .header-nav-list__item-link {
+//     color: getColor(accent)
+// }
+
 .header-nav-list__item-link {
     color: getColor(gray-500);
     font-size: 16px;
     font-weight: 500px;
+    transition: color 250ms;
+
+    &:hover {
+        color: getColor(gray-900);
+    }
 }
 
 .header__btn {

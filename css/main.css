@@ -345,6 +345,10 @@ button {
   color: #667085;
   font-size: 16px;
   font-weight: 500px;
+  transition: color 250ms;
+}
+.header-nav-list__item-link:hover {
+  color: #101828;
 }
 
 .header__btn {
@@ -1481,6 +1485,24 @@ button {
   right: 30px;
 }
 
+.mobile-menu__btn-mobile {
+  margin-left: auto;
+  background-color: #023047;
+  color: white;
+  padding: 12px 21px;
+  border-radius: 12px;
+  border: 2px solid #023047;
+  transition: 250ms;
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+}
+.mobile-menu__btn-mobile:hover {
+  background-color: white;
+  color: #023047;
+}
+
 .is-hidden {
   transform: translateX(100%);
 }
@@ -1520,6 +1542,12 @@ button {
   transition-duration: 300ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transform: scale(100%, 100%);
+}
+@media screen and (max-width: 767.9px) and (min-width: 0) {
+  .modal-window {
+    width: 90%;
+    min-width: auto;
+  }
 }
 
 .modal-window__close-window {

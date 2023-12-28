@@ -36,6 +36,11 @@
     transition-duration: 300ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     transform: scale(100%, 100%);
+
+    @include mobile {
+        width: 90%;
+        min-width: auto;
+    }
 }
 
 .modal-window__close-window {
