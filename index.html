@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kobodrop</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./js/wow.js/animate.css">
+    <link rel="stylesheet" href="./js/splide.js/splide.min.css">
+    <link rel="stylesheet" href="./css/main.min.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="container header__container">
+            <div class="header__logo">
+                <svg class="header__logo-icon" width="32" height="28">
+                    <use href="./images/icons.svg#icon-logo" viewbox="0 0 32 28"></use>>
+                </svg>
+                <span class="header__logo-text">Kobodrop</span>
+            </div>
+            <nav class="header-nav header__header-nav">
+                <ul class="header-nav-list header-nav__header-nav-list">
+                    <li class="header-nav-list__item"><a href="#learn" class="header-nav-list__item-link">Learn</a></li>
+                    <li class="header-nav-list__item"><a href="#integrations"
+                            class="header-nav-list__item-link">Partners</a></li>
+                    <li class="header-nav-list__item"><a href="#join-us" class="header-nav-list__item-link">Join Us</a>
+                    </li>
+                </ul>
+            </nav>
+            <button class="header__btn" type="button" data-modal-open>Contact us</button>
+            <button class="header__mobile-btn" type="button" mobile-open>
+                <svg class="header__mobile-icon" width="24" height="24">
+                    <use href="./images/icons.svg#icon-mobile-menu"></use>
+                </svg>
+            </button>
+        </div>
+        <div class="mobile-menu is-hidden" mobile-menu>
+            <nav class="mobile-menu__navigation">
+                <ul class="mobile-menu__nav-list">
+                    <li class="nav-list__item"><a href="#learn" class="nav-list__link" mobile-close>Learn</a></li>
+                    <li class="nav-list__item"><a href="#integrations" class="nav-list__link" mobile-close>Partners</a>
+                    </li>
+                    <li class="nav-list__item"><a href="#join-us" class="nav-list__link" mobile-close>Join Us</a>
+                    </li>
+                </ul>
+            </nav>
+            <button class="mobile-menu__btn-mobile" type="button" data-modal-open mobile-close>Contact us</button>
+            <button class="close-button mobile-menu__close-button" type="button" mobile-close>
+                <svg class="close-button__icon" width="30" height="30">
+                    <use href="./images/icons.svg#icon-close"></use>
+                </svg>
+            </button>
+        </div>
+    </header>
+    <main>
+        <section class="hero">
+            <div class="container">
+                <div class="hero-content hero__hero-content">
+                    <div class="hero-content__box">
+                        <h1 class="hero-content__title">Start spending the smart way</h1>
+                        <p class="hero-content__sup-text">Take Control of Your Finances Anytime, Anywhere with
+                            Kobodrop.
+                            Discover the Smart Way to Use Your Money!</p>
+                        <ul class="links-list hero-content__links-list">
+                            <li class="links-list__item">
+                                <a href="https://www.apple.com/app-store/" class="links-list__link">
+                                    <svg width="132" height="44">
+                                        <use href="images/icons.svg#icon-app-store-badge"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="links-list__item">
+                                <a href="https://play.google.com/store/games?hl=uk&gl=US" class="links-list__link">
+                                    <svg class="links-list__icon" width="148" height="44">
+                                        <use href="images/icons.svg#icon-play-store-badge"></use>
+                                    </svg>
+                                    <svg class="links-list__playstore" width="26" height="28">
+                                        <use href="images/icons.svg#icon-playstore"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="mockup hero__mockup">
+                        <img class="mockup__customer" src="./images/hero/customer.png" alt="Customer" width="634"
+                            height="612">
+                        <img class="mockup__phone" src="./images/hero/phone-img.png" alt="App on iPhone" width="320"
+                            height="652">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="learn" class="money">
+            <div class="money__container">
+                <h3 class="money__heading wow fadeInDown">Make every penny count</h3>
+                <p class="money__desc wow fadeInDown">Spend smarter, lower your bills, get cashback on everything you
+                    buy, and
+                    unlock credit to grow your business.</p>
+                <div class="simple-security money__simple-security">
+                    <div class="simple simple-security__simple wow fadeInLeftBig">
+                        <div class="simple__text">
+                            <h3 class="simple__heading">Pay with Kobodrop, quick, simple and easy</h3>
+                            <p class="simple__desc">Paying your bills on Kobdrop has never been easier. Whether you are
+                                paying for electricity or internet, Kobodrop gets it done within seconds.</p>
+
+                        </div>
+                        <img class="simple__phone-img" src="./images/money/phone-img.png" alt="iPhone12">
+                        <div class="simple__card-images">
+                            <img src="./images/money/notification-img.png" alt="Master Card notification">
+                            <img src="./images/money/notification-img2.png" alt="MTN notification">
+                        </div>
+                    </div>
+                    <div class="security simple-security__security wow fadeInRightBig">
+                        <svg class="security__icon" width="48" height="48">
+                            <use href="./images/icons.svg#icon-ShieldCheck"></use>
+                        </svg>
+                        <div class="security__text">
+                            <h3 class="security__heading">Bank level security</h3>
+                            <p class="security__desc">Your money is 100% safe and secure on Kobodrop. No hassles, no
+                                glitches, get access to your money anytime.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="payment money__payment">
+                    <div class="reduction payment__reduction wow fadeInLeftBig">
+                        <svg class="reduction__icon" width="48" height="48">
+                            <use href="./images/icons.svg#icon-coins">
+                        </svg>
+                        <div class="reduction__text">
+                            <h3 class="reduction__heading">Cost reduction</h3>
+                            <p class="reduction__desc">Kobodrop reduced payments maintenance and processing fees. No
+                                hidden fees</p>
+                        </div>
+                    </div>
+                    <div class="exchange payment__exchange wow fadeInRightBig">
+                        <div class="exchange__text">
+                            <h3 class="exchange__heading">Send, recieve and Exchange money</h3>
+                            <p class="exchange__desc">Transfers, payments all work on Kobodrop. Get your alert message
+                                immediately after a completed transaction. </p>
+                        </div>
+                        <ul class="banks-grid reduction__banks-grid">
+                            <li class="banks-grid__item"></li>
+                            <li class="banks-grid__item"><img src="./images/money/visa.png" alt=""></li>
+                            <li class="banks-grid__item"></li>
+                            <li class="banks-grid__item"></li>
+                            <li class="banks-grid__item"><img src="./images/money/alat.png" alt=""></li>
+                            <li class="banks-grid__item"></li>
+                            <li class="banks-grid__item"></li>
+                            <li class="banks-grid__item"><img src="./images/money/paypal.png" alt=""></li>
+                            <li class="banks-grid__item"></li>
+                            <li class="banks-grid__item"></li>
+                            <li class="banks-grid__item"><img src="./images/money/gtbank.png" alt=""></li>
+                            <li class="banks-grid__item"></li>
+                            <li class="banks-grid__item"></li>
+                            <li class="banks-grid__item"></li>
+                            <li class="banks-grid__item"></li>
+                            <li class="banks-grid__item"></li>
+                            <li class="banks-grid__item"></li>
+                            <li class="banks-grid__item"></li>
+                            <li class="banks-grid__item"><img src="./images/money/stripe.png" alt=""></li>
+                            <li class="banks-grid__item"></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="integrations" class="features wow fadeInUpBig">
+            <div class="container">
+                <h3 class="features__heading">Transact seamlessly with...</h3>
+                <p class="features__desc">Connect your other accounts to Kobodrop seamlessly. Kobodrop supports 200+
+                    integrations with other payment platforms like stripe, paypal, payoneer and others</p>
+                <div class="features__grid-box">
+                    <ul class="features-grid features__features-grid">
+                        <li class="features-grid__item"><img src="./images/integrations/Klarna.svg" alt="Klarna"
+                                class="features-grid__img"></li>
+                        <li class="features-grid__item"><img src="./images/integrations/Stripe.svg" alt="Stripe"
+                                class="features-grid__img"></li>
+                        <li class="features-grid__item"><img src="./images/integrations/PayPal.svg" alt="PayPal"
+                                class="features-grid__img"></li>
+                        <li class="features-grid__item"><img src="./images/integrations/bedc.png" alt="BEDC"
+                                class="features-grid__img"></li>
+                        <li class="features-grid__item"><img src="./images/integrations/Mastercard.svg" alt="Mastercard"
+                                class="features-grid__img"></li>
+                        <li class="features-grid__item"><img src="./images/integrations/mtn.png" alt="MTN"
+                                class="features-grid__img"></li>
+                        <li class="features-grid__item"><img src="./images/integrations/airtel.png" alt="Airtel"
+                                class="features-grid__img"></li>
+                        <li class="features-grid__item"><img src="./images/integrations/Payoneer.svg" alt="Payoneer"
+                                class="features-grid__img"></li>
+                        <li class="features-grid__item"><img src="./images/integrations/visa.png" alt="Visa"
+                                class="features-grid__img"></li>
+                        <li class="features-grid__item"><img src="./images/integrations/9mobile.png" alt="9mobile"
+                                class="features-grid__img"></li>
+                        <li class="features-grid__item"><img src="./images/integrations/ikeja.png" alt="Ikeja"
+                                class="features-grid__img"></li>
+                        <li class="features-grid__item"><img src="./images/integrations/dstv.png" alt="DStv"
+                                class="features-grid__img"></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section id="join-us" class="join-us">
+            <div class="container join-us__container">
+                <div class="join-us__text">
+                    <h2 class="join-us__title">Join other thousands of people growing with Kobodrop</h2>
+                    <ul class="links-list join-us__links-list">
+                        <li class="links-list__item">
+                            <a href="https://www.apple.com/app-store/" class="links-list__link">
+                                <svg width="132" height="44">
+                                    <use href="images/icons.svg#icon-app-store-badge"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="links-list__item">
+                            <a href="https://play.google.com/store/games?hl=uk&gl=US" class="links-list__link">
+                                <svg class="links-list__icon" width="148" height="44">
+                                    <use href="images/icons.svg#icon-play-store-badge"></use>
+                                </svg>
+                                <svg class="links-list__playstore" width="26" height="28">
+                                    <use href="images/icons.svg#icon-playstore"></use>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="testymonials join-us__testymonials splide" role="group">
+                    <div class="splide__arrows suptext-arrows__arrows">
+                        <button class="splide__arrow--prev splide__arrow arrows__button--left"><svg width="20"
+                                height="20" class="arrows__icon">
+                                <use href="./images/icons.svg#icon-arrow-right"></use>
+                            </svg></button>
+                        <button class="splide__arrow--next splide__arrow arrows__button--right"><svg width="20"
+                                height="20" class="arrows__icon">
+                                <use href="./images/icons.svg#icon-arrow-right"></use>
+                            </svg></button>
+                    </div>
+                    <div class="splide__track">
+                        <ul class="testymonials__list splide__list">
+                            <li class="testymonials__item splide__slide">
+                                <img class="testymonials__img" src="./images/join-us/kemi.jpg" width="576" height="592"
+                                    alt="">
+                                <div class="content-box testymonials__content-box">
+                                    <p class="content-box__desc">“Kobodrop has helped me send and receive money with
+                                        little to no
+                                        complications. It’s what everyone needs!!.”</p>
+                                    <div class="content-box__name-box">
+                                        <h3 class="content-box__name">Kemi Ogunnaike</h3>
+                                        <ul class="content-box__stars-list stars-list">
+                                            <li class="stars-list__item">
+                                                <svg width="20" height="20" class="stars-list__icon">
+                                                    <use href="./images/icons.svg#icon-star"></use>
+                                                </svg>
+                                            </li>
+                                            <li class="stars-list__item">
+                                                <svg width="20" height="20" class="stars-list__icon">
+                                                    <use href="./images/icons.svg#icon-star"></use>
+                                                </svg>
+                                            </li>
+                                            <li class="stars-list__item">
+                                                <svg width="20" height="20" class="stars-list__icon">
+                                                    <use href="./images/icons.svg#icon-star"></use>
+                                                </svg>
+                                            </li>
+                                            <li class="stars-list__item">
+                                                <svg width="20" height="20" class="stars-list__icon">
+                                                    <use href="./images/icons.svg#icon-star"></use>
+                                                </svg>
+                                            </li>
+                                            <li class="stars-list__item">
+                                                <svg width="20" height="20" class="stars-list__icon">
+                                                    <use href="./images/icons.svg#icon-star"></use>
+                                                </svg>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="suptext-arrows content-box__suptext-arrows">
+                                        <h4 class="suptext-arrows__text">Nigeria</h4>
+                                    </div>
+                            </li>
+                            <li class="testymonials__item splide__slide">
+                                <img class="testymonials__img" src="./images/join-us/John.jpg" width="576" height="592"
+                                    alt="">
+                                <div class="content-box testymonials__content-box">
+                                    <p class="content-box__desc">“Overall, I'm very happy with Kobodrop. They offer a
+                                        great selection of products, and competitive prices.”</p>
+                                    <div class="content-box__name-box">
+                                        <h3 class="content-box__name">John Smith</h3>
+                                        <ul class="content-box__stars-list stars-list">
+                                            <li class="stars-list__item">
+                                                <svg width="20" height="20" class="stars-list__icon">
+                                                    <use href="./images/icons.svg#icon-star"></use>
+                                                </svg>
+                                            </li>
+                                            <li class="stars-list__item">
+                                                <svg width="20" height="20" class="stars-list__icon">
+                                                    <use href="./images/icons.svg#icon-star"></use>
+                                                </svg>
+                                            </li>
+                                            <li class="stars-list__item">
+                                                <svg width="20" height="20" class="stars-list__icon">
+                                                    <use href="./images/icons.svg#icon-star"></use>
+                                                </svg>
+                                            </li>
+                                            <li class="stars-list__item">
+                                                <svg width="20" height="20" class="stars-list__icon">
+                                                    <use href="./images/icons.svg#icon-star"></use>
+                                                </svg>
+                                            </li>
+                                            <li class="stars-list__item">
+                                                <svg width="20" height="20" class="stars-list__icon">
+                                                    <use href="./images/icons.svg#icon-star"></use>
+                                                </svg>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="suptext-arrows content-box__suptext-arrows">
+                                        <h4 class="suptext-arrows__text">Ukraine</h4>
+                                    </div>
+                            </li>
+                            <li class="testymonials__item splide__slide">
+                                <img class="testymonials__img" src="./images/join-us/Kyle.jpg" width="576" height="592"
+                                    alt="">
+                                <div class="content-box testymonials__content-box">
+                                    <p class="content-box__desc">“The customer service was also excellent. I had a few
+                                        questions about the e-reader, and the customer service was very
+                                        helpful.”</p>
+                                    <div class="content-box__name-box">
+                                        <h3 class="content-box__name">Kyle Jones</h3>
+                                        <ul class="content-box__stars-list stars-list">
+                                            <li class="stars-list__item">
+                                                <svg width="20" height="20" class="stars-list__icon">
+                                                    <use href="./images/icons.svg#icon-star"></use>
+                                                </svg>
+                                            </li>
+                                            <li class="stars-list__item">
+                                                <svg width="20" height="20" class="stars-list__icon">
+                                                    <use href="./images/icons.svg#icon-star"></use>
+                                                </svg>
+                                            </li>
+                                            <li class="stars-list__item">
+                                                <svg width="20" height="20" class="stars-list__icon">
+                                                    <use href="./images/icons.svg#icon-star"></use>
+                                                </svg>
+                                            </li>
+                                            <li class="stars-list__item">
+                                                <svg width="20" height="20" class="stars-list__icon">
+                                                    <use href="./images/icons.svg#icon-star"></use>
+                                                </svg>
+                                            </li>
+                                            <li class="stars-list__item">
+                                                <svg width="20" height="20" class="stars-list__icon">
+                                                    <use href="./images/icons.svg#icon-star"></use>
+                                                </svg>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="suptext-arrows content-box__suptext-arrows">
+                                        <h4 class="suptext-arrows__text">America</h4>
+                                    </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="container footer__container">
+            <div class="footer-content footer__footer-content">
+                <div class="footer-content__logo-box">
+                    <div class="footer-content__logo">
+                        <svg class="footer-content__logo-icon" width="29" height="23">
+                            <use href="images/icons.svg#icon-logo-negative"></use>
+                        </svg>
+                        <span class="footer-content__logo-text">Kobodrop</span>
+                    </div>
+                    <p class="footer-content__logo-desc">Start spending the smart way</p>
+                </div>
+                <div class="footer-content__anchors">
+                    <div class="footer-product footer-content__footer-product">
+                        <h5 class="footer-product__heading">Product</h5>
+                        <ul class="footers-product__list">
+                            <li class="footer-product__item"><a href="#" class="footer-product__link">Overview</a></li>
+                            <li class="footer-product__item"><a href="#" class="footer-product__link">Features</a></li>
+                            <li class="footer-product__item"><a href="#" class="footer-product__link">Solutions</a></li>
+                            <li class="footer-product__item"><a href="#" class="footer-product__link">Contact</a></li>
+                            <li class="footer-product__item"><a href="#" class="footer-product__link">Releases</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-resources footer-content__footer-resources">
+                        <h5 class="footer-resources__heading">Resources</h5>
+                        <ul class="footers-resources__list">
+                            <li class="footer-resources__item"><a href="#" class="footer-resources__link">Blog</a></li>
+                            <li class="footer-resources__item"><a href="#" class="footer-resources__link">Newsletter</a>
+                            </li>
+                            <li class="footer-resources__item"><a href="#" class="footer-resources__link">Events</a>
+                            </li>
+                            <li class="footer-resources__item"><a href="#" class="footer-resources__link">Help
+                                    center</a></li>
+                            <li class="footer-resources__item"><a href="#" class="footer-resources__link">Support</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="get-app footer-content__get-app">
+                    <h4 class="get-app__heading">Get the app</h4>
+                    <ul class="get-app__list">
+                        <li class="get-app__item">
+                            <a href="https://www.apple.com/app-store/">
+                                <svg class="get-app__icon" width="135" height="40">
+                                    <use href="./images/icons.svg#icon-footer-appstore-badge"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="get-app__item">
+                            <a href="https://play.google.com/store/games?hl=uk&gl=US">
+                                <svg class="get-app__icon" width="135" height="40">
+                                    <use href="./images/icons.svg#icon-footer-googleplay-badge"></use>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-rights footer__footer-rights">
+                <div class="footer-rights__text">© 2023 Kobodrop. All rights reserved.</div>
+                <ul class="footer-rights__list">
+                    <li class="footer-rights__item">
+                        <a href="https://twitter.com/" class="footer-rights__link">
+                            <svg width="24" height="24" class="footer-rights__icon">
+                                <use href="./images/icons.svg#icon-twitter"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="footer-rights__item">
+                        <a href="https://www.linkedin.com/" class="footer-rights__link">
+                            <svg width="24" height="24" class="footer-rights__icon">
+                                <use href="./images/icons.svg#icon-linkedin"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="footer-rights__item">
+                        <a href="https://www.facebook.com/" class="footer-rights__link">
+                            <svg width="24" height="24" class="footer-rights__icon">
+                                <use href="./images/icons.svg#icon-facebook"></use>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <div class="backdrop is-hidden-modal" data-modal>
+		<div class="modal-window backdrop__modal-window">
+			<button class="modal-window__close-window" type="submit" data-modal-close>
+				<svg class="modal-window__close-window-icon" width="30px" height="30px">
+					<use xlink:href="./images/icons.svg#icon-close"></use>
+				</svg>
+			</button>
+			<h2 class="modal-window__title">Залиште свої дані, ми вам передзвонимо</h2>
+			<form id="contact" name="feedback-form modal-window__feedback-form" autocomplete="on">
+				<ul class="feedback-list feedback-form__list">
+					<li class="feedback-list__item">
+						<label class="feedback-list__label" for="name">Ім'я</label>
+						<div class="feedback-list__container">
+							<input class="feedback-list__field" required type="text" name="feedback_name" id="name">
+							<svg class="feedback-list__icon" width="18" height="18">
+								<use href="images/icons.svg#icon-person-black"></use>
+							</svg>
+						</div>
+					</li>
+					<li class="feedback-list__item">
+						<label class="feedback-list__label" for="phone">Телефон</label>
+						<div class="feedback-list__container">
+							<input class="feedback-list__field" required type="tel" name="feedback_phone" id="phone">
+							<svg class="feedback-list__icon" width="18" height="18">
+								<use href="images/icons.svg#icon-phone-black"></use>
+							</svg>
+						</div>
+					</li>
+					<li class="feedback-list__item">
+						<label class="feedback-list__label" for="email">Пошта</label>
+						<div class="feedback-list__container">
+							<input class="feedback-list__field" required type="email" name="feedback_email" id="email">
+							<svg class="feedback-list__icon" width="18" height="18">
+								<use href="images/icons.svg#icon-email-black"></use>
+							</svg>
+						</div>
+					</li>
+					<li class="feedback-list__item">
+						<label class="feedback-list__label" for="comment">Коментар</label>
+						<div class="feedback-list__container">
+							<textarea class="feedback-list__comment-field" required rows="5" name="feedback_comment"
+								id="comment" placeholder="Введіть текст"></textarea>
+						</div>
+					</li>
+				</ul>
+				<button class="feedback-form__button" type="submit">Відправити</button>
+			</form>
+		</div>
+	</div>
+    <script src="./js/modal.js"></script>
+    <script src="./js/mobile.js"></script>
+    <script src="./js/splide.js/splide.min.js"></script>
+    <script>
+        new Splide('.splide', {
+            type: 'loop',
+            perPage: 1,
+            pagination: false,
+        }).mount();
+    </script>
+    <script src="./js/wow.js/wow.min.js"></script>
+    <script>
+        new WOW({
+            offset: 200,
+        }).init();
+    </script>
+</body>
+
+</html>

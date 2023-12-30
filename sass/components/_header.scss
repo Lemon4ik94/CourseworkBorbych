@@ -1,0 +1,99 @@
+.header {
+    padding-top: 24px;
+    padding-bottom: 16px;
+
+    @include mobile {
+        padding: 15px 0;
+    }
+}
+
+.header__container {
+    display: flex;
+    align-items: center;
+
+    @include mobile {
+        max-width: 100%;
+    }
+}
+
+.header__logo {
+    display: flex;
+    align-items: center;
+    margin-right: 40px;
+}
+
+.header__logo-icon {
+    margin-right: 8px;
+}
+
+.header__logo-text {
+    color: getColor(accent);
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: Space Grotesk;
+    font-size: 20.883px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 22px;
+}
+
+.header-nav-list {
+    display: flex;
+    gap: 32px;
+
+    @include mobile {
+        display: none;
+    }
+}
+
+// .header-nav-list__item:hover .header-nav-list__item-link {
+//     color: getColor(accent)
+// }
+
+.header-nav-list__item-link {
+    color: getColor(gray-500);
+    font-size: 16px;
+    font-weight: 500px;
+    transition: color 250ms;
+
+    &:hover {
+        color: getColor(gray-900);
+    }
+}
+
+.header__btn {
+    margin-left: auto;
+    background-color: getColor(accent);
+    color: white;
+    padding: 12px 21px;
+    border-radius: 12px;
+    border: 2px solid getColor(accent);
+    transition: 250ms;
+
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+
+    &:hover {
+        background-color: white;
+        color: getColor(accent);
+    }
+
+    @include mobile {
+        display: none;
+    }
+}
+
+.header__mobile-btn {
+    padding: 8px;
+    background-color: white;
+    margin-left: auto;
+    
+    @include desktop {
+        display: none;
+    }
+
+    @include tablet {
+        display: none;
+    }
+}

@@ -1,0 +1,26 @@
+body {
+    font-family: Inter;
+    font-size: 18px;
+    font-weight: 400;
+    font-style: normal;
+
+    .container {
+        max-width: 1217px;
+        padding: 0 17px;
+        margin: 0 auto;
+
+        @include mobile {
+            max-width: 480px;
+            padding: 0 16px;
+            margin: 0 auto;
+        }
+    }
+
+    button {
+        cursor: pointer;
+    }
+}
+
+html {
+    scroll-behavior: smooth;
+}
